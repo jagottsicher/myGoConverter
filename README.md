@@ -24,15 +24,9 @@ Possible input type flags are:
   -x, --hex	hexadecimal number with or without preceeding "0x" or "0X"  
   -o, --octal	octal number with or without preceeding "0o" or "0O"  
   -bin,--bit	binary number as sequence of zeros and ones without whitespace  
-<<<<<<< HEAD
   -rgb	rgb	values in a string. Whitespaces need doubles quotes. Examples: "-rgb r123g255b23" or -rgb "123 255 23" or -rgb "123, 255, 23"  
-  -r -g -b	🟥 🟩 🟦 as 8-bit decimal value (0-255). Absent values will be considered as zero. Examples "-r 123 -g 255 -b23" or "-g 255"
-  -rgbx		rgb values as hexadecimal triplet as a string. Example: "-rgbx 7bff17"    
-=======
-  -rgb	rgb	values in a string. Whitespaces need doubles quotes. Examples: -rgb r123g255b23 or -rgb "123 255 23" or -rgb "123, 255, 23"  
-  -r -g -b	🟥 🟩 🟦each followed by a 8-bit decimal value (0-255). Absent values will be considered as zero. Examples -r 123 -g 255 -b23 or -g 255
-  -rgbx		rgb values as hexadecimal triplet as a string. Example: -rgbx 7bff17    
->>>>>>> 3a06e2bac925722f6759ecd48574d6fc58700ddf
+  -r -g -b	🟥 🟩 🟦 as 8-bit decimal value (0-255). Absent values will be considered as zero. Examples "-r 123 -g 255 -b23" or "-g 255"  
+  -rgbx		rgb values as hexadecimal triplet as a string. Example: "-rgbx 7bff17"  
   -a, --asc	a string beginning with an ASCII encoded character. Only the first character is considered.
 
 Output flag:  
