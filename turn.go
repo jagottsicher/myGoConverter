@@ -336,7 +336,7 @@ func main() {
 					}
 					fmt.Printf("%#x", decimalValue)
 					if verboseFlag {
-						fmt.Printf(" %x ( without preceding \"0x\")\n", decimalValue)
+						fmt.Printf(" %x (without preceding \"0x\")\n", decimalValue)
 					} else {
 						fmt.Print("\n")
 					}
@@ -440,7 +440,7 @@ func main() {
 					}
 					fmt.Printf("%O", decimalValue)
 					if verboseFlag {
-						fmt.Printf(" %o without preceding \"0o\".\n", decimalValue)
+						fmt.Printf(" %o (without preceding \"0o\")\n", decimalValue)
 					} else {
 						fmt.Print("\n")
 					}
