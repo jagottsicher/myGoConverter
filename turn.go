@@ -44,7 +44,8 @@ Possible output type arguments as are:
   w, web	web formats
   
 Other flags:  
-  -v, --verbose		outputs additional information alternative versions/formats
+  -l, --loop		loop mode, repeatingly recalling last input and overwrite/edit flags/arguments  
+  -v, --verbose		outputs additional information alternative versions/formats  
   -h, --help		outputs this help text  
   -v, -ver, --version	outputs the version number if no other flags are present
 
@@ -60,6 +61,8 @@ Made with ❤️  and the Go programming language.
 const version = `v1.0.23-beta.2`
 
 func main() {
+	// TO-DO Loop-Mode to restart main with recalling and overwriting last value (tview/tcell?) and CRTL+C to stop
+
 	// examplePtr := flag.String("example", "defaultValue", " Help text.")
 
 	var verboseFlag, versionFlag bool
@@ -95,6 +98,9 @@ func main() {
 
 	flag.BoolVar(&verboseFlag, "v", false, "Turns on verbose output where applicable.")
 	flag.BoolVar(&verboseFlag, "verbose", false, "Turns on verbose output where applicable.")
+
+	flag.BoolVar(&loopFlag, "l", false, "Turns on loop mode.")
+	flag.BoolVar(&loopFlag, "loop", false, "Turns on loop mode.")
 
 	flag.BoolVar(&versionFlag, "ver", false, "Outputs the version number")
 	flag.BoolVar(&versionFlag, "version", false, "Outputs the version number")

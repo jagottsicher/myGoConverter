@@ -49,9 +49,10 @@ Possible output type arguments as are:
   w, web	web formats  
   
 Other flags:  
+  -l, --loop		loop mode, repeatingly recalling last input and overwrite/edit flags/arguments  
   -v, --verbose		outputs additional information alternative versions/formats  
   -h, --help		outputs this help text  
-  -v, -ver, --version	outputs the version number if no other flags are present  
+  -v, -ver, --version	outputs the version number if no other flags are present
 
 Note:  
 Order of the desired output types will be considered.  
