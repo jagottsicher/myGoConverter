@@ -7,25 +7,27 @@ import (
 
 func TestMainFunc(t *testing.T) {
 
-	type testData struct {
-		inputArgStrings []string
-		//ergebnis  int
-	}
+	// type testData struct {
+	// 	inputArgStrings []string
+	// 	//ergebnis  int
+	// }
 
-	tests := []testData{
-		//testData{[]string{"-d", "23", "-v"}},
-		testData{[]string{"-bin", "10111", "-v"}},
-	}
+	// tests := []testData{
+	// 	//testData{[]string{"-d", "23", "-v"}},
+	// 	// testData{[]string{"-bin", "10111", "-v"}},
+	// }
 
-	for _, v := range tests {
-		os.Args = append(os.Args, v.inputArgStrings[0])
-		os.Args = append(os.Args, v.inputArgStrings[1])
-		os.Args = append(os.Args, v.inputArgStrings[2])
+	// for _, v := range tests {
+	os.Args = []string{"-bin", "10111", "-v"}
+	// os.Args = append(os.Args, v.inputArgStrings[0])
 
-		main()
-	}
+	// os.Args = append(os.Args, v.inputArgStrings[1])
+	// os.Args = append(os.Args, v.inputArgStrings[2])
 
-	// output := main()
+	// main()
+	// }
+
+	output := main()
 
 	// if output != `Hexadecimal: 0x17 17 (without preceding "0x")` {
 	// 	t.Error("Expected:", `Hexadecimal: 0x17 17 (without preceding "0x")`, "but got:", output)
