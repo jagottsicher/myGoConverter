@@ -65,7 +65,7 @@ func main() {
 
 	// examplePtr := flag.String("example", "defaultValue", " Help text.")
 
-	var verboseFlag, versionFlag bool
+	var verboseFlag, versionFlag, loopFlag bool
 	var decimalValue, binaryDigits, redInt, greenInt, blueInt int
 	var tempInt int64
 	var red, green, blue float64
