@@ -1,2 +1,69 @@
-# myGoConverter
+# The TURNer, dedicated to Will Turner*
+#### Video Demo:  <https://youtu.be/6TIxIqFPtS8>
+#### Description:
 The TURNer is a command line tool for Linux, Windows and macOS which allows to convert values of several (mostly numeric) types and in information technology usual unit notations into another.
+
+The output goes directly to sdtout to make it usable for other command-line tools, respectively handle it over as values in pipes.
+
+Example: Converts the decimal number "23" into a binary representation
+
+```turn -d 23 -out bx```
+ouputs:
+```
+00010111
+0x17
+```
+Also try ```turn -rgb "123 255 23" -out wx -v``` or ```turn -d 97 -out bxoau -v```.
+
+Correct usage of turn:
+
+```
+turn [-inputType] <inputValue> [-out] {d|x|w|o|b|r|rgb|c|a|u} [-v]
+
+Possible input type flags are:  
+  -d, --decimal	decimal number	
+  -x, --hex	hexadecimal number with or without preceeding "0x" or "0X"  
+  -o, --octal	octal number with or without preceeding "0o" or "0O"  
+  -bin,--bit	binary number as sequence of zeros and ones without whitespace  
+<<<<<<< HEAD
+  -rgb	rgb	values in a string. Whitespaces need doubles quotes. Examples: "-rgb r123g255b23" or -rgb "123 255 23" or -rgb "123, 255, 23"  
+  -r -g -b	🟥 🟩 🟦 as 8-bit decimal value (0-255). Absent values will be considered as zero. Examples "-r 123 -g 255 -b23" or "-g 255"
+  -rgbx		rgb values as hexadecimal triplet as a string. Example: "-rgbx 7bff17"    
+=======
+  -rgb	rgb	values in a string. Whitespaces need doubles quotes. Examples: -rgb r123g255b23 or -rgb "123 255 23" or -rgb "123, 255, 23"  
+  -r -g -b	🟥 🟩 🟦each followed by a 8-bit decimal value (0-255). Absent values will be considered as zero. Examples -r 123 -g 255 -b23 or -g 255
+  -rgbx		rgb values as hexadecimal triplet as a string. Example: -rgbx 7bff17    
+>>>>>>> 3a06e2bac925722f6759ecd48574d6fc58700ddf
+  -a, --asc	a string beginning with an ASCII encoded character. Only the first character is considered.
+
+Output flag:  
+  -out, --output  indicates a list of desired output formats where applicable. A value of a default type is output if -out flag is omitted.
+
+Possible output type arguments as are:  
+  d		decimal number format  
+  x		hexadecimal number format  
+  b		binary number format  
+  o		octal format  
+  a		ASCII representation where applicable  
+  c		character representation where applicable  
+  u		UTF-8 representation where applicable  
+  w, web	web formats  
+  
+Other flags:  
+  -v, --verbose		outputs additional information alternative versions/formats  
+  -h, --help		outputs this help text  
+  -v, -ver, --version	outputs the version number if no other flags are present  
+
+Note:  
+Order of the desired output types will be considered.  
+Color output dependent of your terminal's abilities and settings.  
+
+First version developed as a project for the CS50 course "Introduction to Computer Science" of the Harvard University 2022.  
+Made with ❤️ and the Go programming language.
+```
+
+*Will Turner Jr., the fictional character in the Pirates of the Caribbean films.  
+  
+Will Turner, embodied by Orlando Bloom. On the one hand, Will Turner represents a typical member of the hard-working middle class with gifted manual skills; on the other hand, due to his background and these very skills, he is an aspiring character who strives for change and to break out of the role assigned to him by society. In particular, next to the extroverted Jack Sparrow (Johnny Depp), Will Turner appears like a mixture of an unintentionally funny Guybrush Threepwood and an old-style swashbuckler, like an Errol Flynn embodied in his best days.  
+  
+The crucial point is that Will Turner had a large repertoire of outstanding skills, which he was ready to use for others and for the good of society, turning one thing into another as a blacksmith and turning both his own destiny and that of those around him. Just as "The TURNer" should be a helpful and universally applicable tool. 
