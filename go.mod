@@ -1,4 +1,4 @@
-module atwork/turn
+module github.com/jagottsicher/myGoConverter/turn
 
 go 1.17
 
