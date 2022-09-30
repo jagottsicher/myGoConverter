@@ -57,7 +57,7 @@ Made with ❤️  and the Go programming language.
 
 `
 
-const version = `v1.0.23-beta.1`
+const version = `v1.0.23-beta.2`
 
 func main() {
 	// examplePtr := flag.String("example", "defaultValue", " Help text.")
