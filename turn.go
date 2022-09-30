@@ -9,10 +9,9 @@ import (
 	"strings"
 
 	"github.com/efekarakus/termcolor"
+	thousands "github.com/floscodes/golang-thousands"
 	"github.com/gookit/color"
 	"github.com/hisamafahri/coco"
-	"golang.org/x/text/language"
-	"golang.org/x/text/message"
 )
 
 const usage = `
@@ -355,8 +354,9 @@ func main() {
 					}
 					fmt.Printf("%d", decimalValue)
 					if verboseFlag {
-						p := message.NewPrinter(language.English)
-						p.Printf(" %d (English notation)\n", decimalValue)
+						//p := message.NewPrinter(language.English)
+						p, _ := thousands.Separate(decimalValue, "en")
+						fmt.Printf(" %v (English notation)\n", p)
 					} else {
 						fmt.Print("\n")
 					}
@@ -626,8 +626,8 @@ func main() {
 			}
 			fmt.Printf("%d", decimalValue)
 			if verboseFlag {
-				p := message.NewPrinter(language.English)
-				p.Printf(" %d (English notation)\n", decimalValue)
+				p, _ := thousands.Separate(decimalValue, "en")
+				fmt.Printf(" %v (English notation)\n", p)
 			} else {
 				fmt.Print("\n")
 			}

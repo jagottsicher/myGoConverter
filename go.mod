@@ -4,9 +4,9 @@ go 1.17
 
 require (
 	github.com/efekarakus/termcolor v1.0.1
+	github.com/floscodes/golang-thousands v0.0.0-20210816125925-ff456bdeae02
 	github.com/gookit/color v1.5.2
 	github.com/hisamafahri/coco v1.0.0
-	golang.org/x/text v0.3.7
 )
 
 require (
