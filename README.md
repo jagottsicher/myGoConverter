@@ -56,7 +56,7 @@ First version developed as a project for the CS50 course "Introduction to Comput
 Made with ❤️ and the Go programming language.
 ```
 ### Installation:
-You can install a binary for your operation system from the [releases](https://github.com/jagottsicher/myGoConverter/releases) or you can build your own version from the the source code and install that in your path.
+You can install a binary for your operation system from the [releases](https://github.com/jagottsicher/myGoConverter/releases) or you can build your own version from the the source code and install that in your path. see more detailed instructions on [INSTALL.md](https://github.com/jagottsicher/myGoConverter/blob/main/INSTALL.md).
 
 <hr>
 
