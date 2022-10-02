@@ -23,3 +23,12 @@ Execute ```turn --version``` on one of your operation system's shells.
 ### Windows (cmd.exe/Powershell)
 
 from here stick to the instruction as described in the section Binaries/Releases (see above)
+
+
+
+$ env GOOS=linux GOARCH=amd64 go build -o ../bin/linux/deployer  
+
+$ env GOOS=windows GOARCH=amd64 go build -o ../bin/windows/deployer.exe  
+
+$ env GOOS=darwin GOARCH=amd64 go build -o ../bin/darwin/deployer  
+
