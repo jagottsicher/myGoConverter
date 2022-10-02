@@ -1,5 +1,5 @@
 # The TURNer, dedicated to Will Turner*
-#### Description:
+### Description:
 The TURNer is a command line tool for Linux, Windows and macOS which allows to convert values of several (mostly numeric) types and in information technology usual unit notations into another.
 
 The output goes directly to sdtout to make it usable for other command-line tools, respectively handle it over as values in pipes.
@@ -55,6 +55,10 @@ Color output dependent of your terminal's abilities and settings.
 First version developed as a project for the CS50 course "Introduction to Computer Science" of the Harvard University 2022.  
 Made with ❤️ and the Go programming language.
 ```
+### Installation:
+You can install a binary for your operation system from the [releases](https://github.com/jagottsicher/myGoConverter/releases) or you can build your own version from the the source code and install that in your path.
+
+<hr>
 
 *Will Turner Jr., the fictional character in the Pirates of the Caribbean films.  
   
