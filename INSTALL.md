@@ -1,4 +1,4 @@
-# Installation of The TURNer
+# Installation
 
 ## Binaries/Releases
 Download the binary from the [releases](https://github.com/jagottsicher/myGoConverter/releases) page matching your operation system. install in the correstponding path:
