@@ -10,7 +10,7 @@ Reccomendation to use as single user
 ### Windows (cmd.exe/Powershell)
 
 ### Check version
-Execute ```turn --Version``` on one of your operation system's shells.
+Execute ```turn --version``` on one of your operation system's shells.
 
 ## Build from Source
 
