@@ -61,7 +61,7 @@ You can install a binary for your operation system from the [releases](https://g
 
 <hr>
 
-<a name="dedication">1</a>: Will Turner Jr., the fictional character in the Pirates of the Caribbean films.  
+<a name="dedication">1</a> Will Turner Jr., the fictional character in the Pirates of the Caribbean films.  
   
 Will Turner, embodied by Orlando Bloom. On the one hand, Will Turner represents a typical member of the hard-working middle class with gifted manual skills; on the other hand, due to his background and these very skills, he is an aspiring character who strives for change and to break out of the role assigned to him by society. In particular, next to the extroverted Jack Sparrow (Johnny Depp), Will Turner appears like a mixture of an unintentionally funny Guybrush Threepwood and an old-style swashbuckler, like an Errol Flynn embodied in his best days.  
   
