@@ -1,7 +1,7 @@
 # Installation of The TURNer
 
 ## Binaries/Releases
-download the right release binary. install in the correstponding path:
+Download the release binary matching your operation system. install in the correstponding path:
 Reccomendation to use as single user 
 ### Linux/U**X (/bin/bash)
 
