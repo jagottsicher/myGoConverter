@@ -1,12 +1,12 @@
 BINARY_NAME=turn
 
 build:
- GOARCH=amd64 GOOS=darwin go build -o ${BINARY_NAME}-darwin turn.go
- GOARCH=amd64 GOOS=linux go build -o ${BINARY_NAME}-linux turn.go
- GOARCH=amd64 GOOS=window go build -o ${BINARY_NAME}-windows turn.go
+	GOARCH=amd64 GOOS=darwin go build -o ../bin/macos/${BINARY_NAME} ./src/turn.go
+	GOARCH=amd64 GOOS=linux go build -o ../bin/linux/${BINARY_NAME} ./src/turn.go
+	GOARCH=amd64 GOOS=windows go build -o ../bin/windows/${BINARY_NAME}.exe ./src/turn.go
 
 run:
-	./${BINARY_NAME}
+	../bin/linux/${BINARY_NAME}
 
 build_and_run: build run
 
