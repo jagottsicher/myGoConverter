@@ -16,7 +16,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          go get ./src/
+          go install ./src/
 
       - name: Build
         run: go build -o ./bin/linux/turn ./src/turn.go
