@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/efekarakus/termcolor"
+	"github.com/jagottsicher/termcolor"
 	thousands "github.com/floscodes/golang-thousands"
 	"github.com/gookit/color"
 	"github.com/hisamafahri/coco"
