@@ -16,7 +16,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          go install ../../src
+          go install github.com/floscodes/golang-thousands
+          go install github.com/gookit/color
+          go install github.com/hisamafahri/coco
+          go install github.com/jagottsicher/termcolor
 
       - name: Build
         run: go build -o ./bin/linux/turn ./src/turn.go
