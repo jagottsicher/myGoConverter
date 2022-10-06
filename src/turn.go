@@ -57,7 +57,7 @@ Made with ❤️  and the Go programming language.
 
 `
 
-const version = `v1.0.23-beta.2`
+const version = `v1.0.23-beta.3`
 
 func main() {
 	// TO-DO Loop-Mode to restart main with recalling and overwriting last value (tview/tcell?) and CRTL+C to stop
