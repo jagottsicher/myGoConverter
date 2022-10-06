@@ -4,9 +4,7 @@
 The TURNer is a command line tool for Linux, Windows and macOS which allows to convert values of different (mostly numeric) types and units commonly used in information technology into different notations.
 
 The output goes directly to sdtout to make it usable for other command-line tools, respectively handle it over as values in pipes.
-
 ![Some examples of using The TURNer](https://github.com/jagottsicher/myGoConverter/blob/main/doc/images/examples.png)
-
 Example: Converts the decimal number "23" into a binary representation
 
 ```turn -d 23 -out bx```
