@@ -12,14 +12,22 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v3
         with:
-          go-version: 1.19
+          go-version: 1.17
 
       - name: Install dependencies
         run: |
-          go install github.com/floscodes/golang-thousands@v0.0.0-20210816125925-ff456bdeae02
-          go install github.com/gookit/color@latest
-          go install github.com/hisamafahri/coco@latest
-          go install github.com/jagottsicher/termcolor@latest
+          go get github.com/floscodes/golang-thousands
+          go get github.com/gookit/color
+          go get github.com/hisamafahri/coco
+          go get github.com/jagottsicher/termcolor
+
+
+
+
+#github.com/floscodes/golang-thousands@v0.0.0-20210816125925-ff456bdeae02
+#          go install github.com/gookit/color@latest
+#          go install github.com/hisamafahri/coco@latest
+#          go install github.com/jagottsicher/termcolor@latest
 
       - name: Build
         run: |
