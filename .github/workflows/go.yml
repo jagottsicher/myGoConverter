@@ -16,7 +16,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          go install github.com/floscodes/golang-thousands@latest
+          go get github.com/floscodes/golang-thousands
           go install github.com/gookit/color@latest
           go install github.com/hisamafahri/coco@latest
           go install github.com/jagottsicher/termcolor@latest
