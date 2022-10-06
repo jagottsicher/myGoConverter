@@ -5,7 +5,7 @@ The TURNer is a command line tool for Linux, Windows and macOS which allows to c
 
 The output goes directly to sdtout to make it usable for other command-line tools, respectively handle it over as values in pipes.
 
-<img width="1024" padding="0" alt="examples of usage" src="doc/images/examples.png">
+<img width="1024" style="padding:0" alt="examples of usage" src="doc/images/examples.png">
 
 Example: Converts the decimal number "23" into a binary representation
 
