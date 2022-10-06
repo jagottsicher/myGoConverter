@@ -21,14 +21,6 @@ jobs:
           go get github.com/hisamafahri/coco
           go get github.com/jagottsicher/termcolor
 
-
-
-
-#github.com/floscodes/golang-thousands@v0.0.0-20210816125925-ff456bdeae02
-#          go install github.com/gookit/color@latest
-#          go install github.com/hisamafahri/coco@latest
-#          go install github.com/jagottsicher/termcolor@latest
-
       - name: Build
         run: |
           cd src
