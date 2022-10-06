@@ -29,5 +29,5 @@ jobs:
 
       - name: Test
         run: |
-          cd src/test/
+          cd test
           go test -v turn_basic_test.go
