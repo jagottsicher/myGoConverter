@@ -25,7 +25,7 @@ jobs:
         run: |
           cd src
           GOARCH=amd64 GOOS=linux
-          go build -o ../bin/linux/turn ./turn.go -v
+          go build -o ../bin/linux/turn ./turn.go
 
 #      - name: Test
 #        run: go test -v ./src/test/turn_basic_test.go
