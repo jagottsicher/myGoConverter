@@ -1,4 +1,4 @@
-name: GoCli
+name: Go Build
 
 on: [push]
 
