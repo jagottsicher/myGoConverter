@@ -1,7 +1,7 @@
 # The TURNer [![Actions Status](https://github.com/jagottsicher/myGoConverter/workflows/Go%20Build/badge.svg)](https://github.com/jagottsicher/myGoConverter/actions)
 ## Dedicated to Will Turner<sup>[1](#dedication)</sup>
 ### Description:
-The TURNer is a command line tool for Linux, Windows and macOS which allows to convert values of several (mostly numeric) types and in information technology usual unit notations into another.
+The TURNer is a command line tool for Linux, Windows and macOS which allows to convert values of different (mostly numeric) types and units commonly used in information technology into different notations.
 
 The output goes directly to sdtout to make it usable for other command-line tools, respectively handle it over as values in pipes.
 
