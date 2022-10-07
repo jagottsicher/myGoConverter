@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jagottsicher/termcolor"
-	thousands "github.com/floscodes/golang-thousands"
 	"github.com/gookit/color"
 	"github.com/hisamafahri/coco"
+	"github.com/jagottsicher/myGoToolbox"
+	"github.com/jagottsicher/termcolor"
 )
 
 const usage = `
@@ -355,7 +355,7 @@ func main() {
 					fmt.Printf("%d", decimalValue)
 					if verboseFlag {
 						//p := message.NewPrinter(language.English)
-						p, _ := thousands.Separate(decimalValue, "en")
+						p, _ := myGoToolbox.Separate(decimalValue, "en")
 						fmt.Printf(" %v (English notation)\n", p)
 					} else {
 						fmt.Print("\n")
@@ -626,7 +626,7 @@ func main() {
 			}
 			fmt.Printf("%d", decimalValue)
 			if verboseFlag {
-				p, _ := thousands.Separate(decimalValue, "en")
+				p, _ := myGoToolbox.Separate(decimalValue, "en")
 				fmt.Printf(" %v (English notation)\n", p)
 			} else {
 				fmt.Print("\n")
