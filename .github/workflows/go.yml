@@ -16,7 +16,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          go get github.com/floscodes/golang-thousands
+          go get github.com/jagottsicher/myGoToolbox
           go get github.com/gookit/color
           go get github.com/hisamafahri/coco
           go get github.com/jagottsicher/termcolor
