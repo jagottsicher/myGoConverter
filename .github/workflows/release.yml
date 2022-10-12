@@ -1,42 +1,39 @@
 name: Release
 
-on: [push]
+on:
+  release:
+    types: [created]
 
 jobs:
-  build:
-
+  releases-matrix:
+    name: Release
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # build and publish in parallel: linux/386, linux/amd64, linux/arm64, windows/386, windows/amd64, darwin/amd64, darwin/arm64
+        goos: [linux, windows, darwin]
+        goarch: ["386", amd64, arm64]
+        exclude:
+          - goarch: "386"
+            goos: darwin
+          - goarch: arm64
+            goos: windows
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Go
-        uses: actions/setup-go@v3
-        with:
-          go-version: 1.17
-
-      - name: Install dependencies
+    - uses: actions/checkout@v3
+      with:
+        go-version: 1.17
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        goos: ${{ matrix.goos }}
+        goarch: ${{ matrix.goarch }}
+        goversion: "https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz"
+        project_path: "./cmd/test-binary"
+        binary_name: "test-binary"
+        extra_files: LICENSE README.md
+        
+        
+        - name: Install dependencies
         run: |
           go get github.com/jagottsicher/myGoToolbox
           go get github.com/gookit/color
           go get github.com/hisamafahri/coco
           go get github.com/jagottsicher/termcolor
-
-      - name: Build linux
-        run: |
-          cd src
-          GOARCH=amd64 GOOS=linux
-          go build -o ../bin/linux/turn ./turn.go
-      - name: Build macos
-        run: |
-          cd src
-          GOARCH=amd64 GOOS=darwin
-          go build -o ../bin/macos/turn ./turn.go
-      - name: Build windows
-        run: |
-          cd src
-          GOARCH=amd64 GOOS=windows
-          go build -o ../bin/windows/turn.exe ./turn.go
-
-#      - name: Test
-#        run: |
-#          ls -alF
