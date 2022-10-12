@@ -1,13 +1,13 @@
 name: Release
 
-#on:
-#  push:
-#    tags:
-#      - "*" # triggers only if push new tag version, like `0.8.4` or else
-
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write  # publishing releases
+#  repository-projects: write  # move cards between columns
 
 jobs:
   releases-matrix:
