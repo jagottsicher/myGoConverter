@@ -20,19 +20,20 @@ jobs:
           go get github.com/gookit/color
           go get github.com/hisamafahri/coco
           go get github.com/jagottsicher/termcolor
+          cd src
 
       - name: Build linux
         run: |
           GOARCH=amd64 GOOS=linux
-          go build -o ./bin/linux/turn ./src/turn.go
+          go build -o ../bin/linux/turn ./turn.go
       - name: Build macos
         run: |
           GOARCH=amd64 GOOS=darwin
-          go build -o ./bin/macos/turn ./src/turn.go
+          go build -o ../bin/macos/turn ./turn.go
       - name: Build windows
         run: |
           GOARCH=amd64 GOOS=windows
-          go build -o ./bin/windows/turn.exe ./src/turn.go
+          go build -o ../bin/windows/turn.exe ./turn.go
 
 #      - name: Test
 #        run: |
