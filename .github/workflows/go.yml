@@ -27,7 +27,6 @@ jobs:
           GOARCH=amd64 GOOS=linux
           go build ./turn.go
 
-#      - name: Test
-#        run: |
-#          cd test
-#          go test -v turn_basic_test.go
+      - name: Test
+        run: |
+          ls -alF
