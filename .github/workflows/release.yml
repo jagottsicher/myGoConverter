@@ -1,0 +1,39 @@
+name: Release
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.17
+
+      - name: Install dependencies
+        run: |
+          go get github.com/jagottsicher/myGoToolbox
+          go get github.com/gookit/color
+          go get github.com/hisamafahri/coco
+          go get github.com/jagottsicher/termcolor
+
+      - name: Build linux
+        run: |
+          GOARCH=amd64 GOOS=linux
+          go build -o ./bin/linux/turn ./src/turn.go
+      - name: Build macos
+        run: |
+          GOARCH=amd64 GOOS=darwin
+          go build -o ./bin/macos/turn ./src/turn.go
+      - name: Build windows
+        run: |
+          GOARCH=amd64 GOOS=windows
+          go build -o ./bin/windows/turn.exe ./src/turn.go
+
+#      - name: Test
+#        run: |
+#          ls -alF
